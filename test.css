@@ -1,0 +1,204 @@
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 20px 100px 0 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 448px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+header ul {
+    display: flex;
+    gap: 2rem;
+    border: 1px solid black;
+}
+
+.login {
+    width: 88px;
+    height: 45px;
+    border: 1px solid black;
+}
+
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.popular > h1 {
+    margin-bottom: 20px;
+}
+
+.best {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.best > .img {
+    width: 400px;
+    height: 250px;
+    border: 1px solid black;
+} 
+
+.best > .content {
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bar {
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar > .likes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.likes > .img {
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+.bar > .another {
+    display: flex;
+    gap: 10px;
+}
+
+.another > .img1,
+.another > .img2 {
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+.seconds {
+    display: flex;
+    gap: 20px;
+}
+
+.seconds > .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    border: 1px solid black;
+    gap: 20px;
+}
+
+.seconds > .blog > .img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.links {
+    margin: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.activity {
+    display: flex;
+    gap: 10px;
+    border: 1px solid black;
+}
+
+.activity > .users {
+    width: 30%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.users > h2 {
+    margin: 20px 0;
+}
+
+.users > .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.icons > .img {
+    height: 64px;
+    width: 64px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+.activity {
+    margin-bottom: 20px;
+}
+
+.activity > .chat {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat > h2 {
+    margin: 20px 0;
+}
+
+.chat > .chat__msgs {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.chat > .chat__sand {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.chat__sand > a {
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
