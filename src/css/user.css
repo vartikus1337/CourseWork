@@ -1,0 +1,145 @@
+.linear-gradient-text {
+    background: linear-gradient(270deg, #952BFF 0%, #FF6CAB 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@font-face {
+    font-family: 'Basic';
+    src: url(../fonts/basic.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    font-family: "Basic";
+    height: 89vh;
+    color: white;
+    background: linear-gradient(#020024 0%, #090979 100%);
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    gap: 30px;
+    display: flex;
+    margin: 100px 100px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left {
+    width: 30%;
+    gap: 20px;
+}
+
+.block > img {
+    background:
+            linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 30%;
+    border: 2px solid transparent;
+}
+
+.block > .progress {
+    width: 160px;
+    height: 3px;
+    background: linear-gradient(to right, darkblue, darkorchid);
+}
+
+.block > .stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.stat > p {
+    font-size: 30px;
+}
+
+.right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.right > .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.name > h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.name img {
+    width: 50px;
+    height: 25px;
+}
+
+.block > main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    background-color: rgba(34, 30, 223, 0.21);
+    border-radius: 30px;
+}
+
+main > section {
+    margin-left: 10%;
+    margin-top: 20%;
+    display: flex;
+    height: 100%;
+    gap: 100px;
+}
+
+main > footer {
+    margin-left: 10%;
+    display: flex;
+    height: 135px;
+    align-items: center;
+    gap: 30px;
+}
+
+footer > .subscribe {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer a {
+    padding: 9px 11px;
+    border-radius: 40px;
+}
+
+footer a:hover {
+    margin: -2px;
+    background:  padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}

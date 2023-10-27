@@ -98,9 +98,11 @@ a.login {
 }
 
 a.login:hover {
-    margin: -1px;
-    border: 1px solid #fff;
-    border-radius: 10px;
+    margin: -2px;
+    background:  padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 30%;
+    border: 2px solid transparent;
 }
 
 .popular {
@@ -198,6 +200,14 @@ a.login:hover {
 
 .links > h1 {
     padding: 10px;
+}
+
+.links > h1:hover {
+    margin: -1px;
+    background:
+        linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 20px;
+    border: 1px solid transparent;
 }
 
 .activity {
