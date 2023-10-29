@@ -1,4 +1,5 @@
 html {
+    cursor: url(../cursor/chroma_cursor.gif), auto;
     box-sizing: border-box;
 }
 

@@ -166,6 +166,3 @@ main section:last-child {
   display: flex ;
   gap: 10px;
 }
-.check {
-  border-radius: 50%;
-}
