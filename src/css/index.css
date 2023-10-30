@@ -22,21 +22,11 @@
     font-weight: 400;
 }
 
-/* Particles */
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
 canvas {
-    display: block;
-}
-
-#particles-js {
-    width: 100%;
-    height: 100%;
+    z-index: -1;
+    height: 300%;
+    width: 100vw;
+    position: absolute;
 }
 
 body {
@@ -266,6 +256,26 @@ a.login:hover {
     align-items: center;
     width: 100%;
     height: 50px;
+}
+
+.chat__sand > div.input {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    height: 100%;
+    width: 100%;
+}
+
+div.input > input {
+    font-family: "Basic";
+    color: #fff;
+    background: rgba(9, 9, 121, 1);
+    font-size: 2em;
+    text-indent: 10px;
+    border: none;
+    border-radius: 20px;
+    height: 70%;
+    width: 70%;
 }
 
 .chat__sand > a {

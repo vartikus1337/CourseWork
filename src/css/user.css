@@ -5,6 +5,16 @@
     -webkit-text-fill-color: transparent;
 }
 
+canvas.particles-js-canvas-el {
+    margin-bottom: 20%;
+    height: 89vh !important;
+}
+
+canvas {
+    z-index: -1;
+    position: absolute;
+}
+
 @font-face {
     font-family: 'Basic';
     src: url(../fonts/basic.ttf) format("truetype");
@@ -111,10 +121,16 @@ body {
 
 main > section {
     margin-left: 10%;
-    margin-top: 20%;
+    margin-top: 10%;
     display: flex;
     height: 100%;
     gap: 100px;
+}
+
+section > .preference {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 main > footer {

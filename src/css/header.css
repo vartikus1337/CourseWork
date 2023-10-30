@@ -1,0 +1,59 @@
+header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 0;
+    width: 80vw;
+}
+
+header img {
+    width: 80px;
+    height: 50px;
+}
+
+header .search {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-size: 20px;
+    text-indent: 10px;
+    background: rgba(79, 8, 97, 0.50);
+    border: none;
+    border-radius: 20px;
+    flex-grow: 2;
+    height: 35px;
+}
+
+button {
+    position: absolute;
+    right: 20vw;
+    border: none;
+    background: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button img {
+    width: 25px;
+    height: 25px;
+}
+
+a.profile {
+    border: 1px solid #fff;
+    padding: 0.7vw;
+    border-radius: 10px;
+}
+
+a.profile:hover {
+    margin: 1px;
+    background:
+        linear-gradient(to right, darkblue, darkorchid) border-box;
+    border: none;
+}

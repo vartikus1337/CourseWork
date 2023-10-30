@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Basic';
+    src: url(../fonts/basic.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+html {
+    min-height: 300px;
+    max-height: 4000px;
+    background: linear-gradient(181deg, #520930 1.25%, #000 233.85%);
+}
+
+body {
+    font-family: 'Basic';
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin-top: 9vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+.best {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.best > .img {
+    max-width: 475px;
+    min-width: 100px;
+    width: 100%;
+    height: 250px;
+    border-radius: 40px;
+} 
+
+.best > .content {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content > h3,
+.content > p {
+    text-align: center;
+}
+
+.bar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar > .likes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bar > .another {
+    display: flex;
+    gap: 10px;
+}

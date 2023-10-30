@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="src/css/index.css">
 </head>
 <body>
+    <div id="particles-js">
+        
+    </div>
     <div class="container">
         <div class="wrapper">
             <header>
@@ -35,8 +38,8 @@
                                 <p>000</p>
                             </div>
                             <div class="another">
-                                <img src="src/imgs/comment.png" width="40px">
-                                <img src="src/imgs/share.png" width="40px">
+                                <a href=""><img src="src/imgs/comment.png" width="40px"></a>
+                                <a href=""><img src="src/imgs/share.png" width="40px"></a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +93,9 @@
                     <h2 class="linear-gradient-text">Chat</h2>
                     <div class="chat__msgs"></div>
                     <div class="chat__sand">
-                        <input type="text" name="msg">
+                        <div class="input">
+                            <input type="text" name="msg">
+                        </div>
                         <a href="#">
                             <img src="src/imgs/sand.png" alt="">
                         </a>
@@ -104,5 +109,6 @@
         </div>
     </div>
 </body>
-
+<script src="particles.js"></script>
+<script src="app.js"></script>
 </html>
