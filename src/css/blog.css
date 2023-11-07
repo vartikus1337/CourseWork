@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Basic';
+    src: url(../fonts/basic.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: "Basic";
+}
+
+canvas {
+    background: linear-gradient(180deg, #040345 0%, #020111 100%);
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+main {
+    margin-top: 6vh;
+    display: flex;
+    padding: 20px 100px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.block {
+    display: flex;
+    padding: 5px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.block > img {
+    object-fit: cover;
+    width: 60%;
+    height: 250px;
+    border-radius: 80px;
+}
+
+.creator {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.creator > img {
+    /* object-fit: cover; */
+    min-width: 128px;
+    min-height: 128px;
+    border-radius: 100px;
+}
+
+.creator > h1 {
+    font-size: 30px;
+}
+
+main > p {
+    text-align: center;
+}
+
+.stroke {
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+}
+
+form.comment {
+    display: flex;
+}
+
+form.comment input {
+    width: 80%;
+    font-size: 20px;
+    text-indent: 10px;
+    background: rgba(79, 8, 97, 0.50);
+    border: none;
+    border-radius: 20px;
+    flex-grow: 2;
+    height: 35px;
+}
+
+form.comment button {
+    width: 20%;
+    background: none;
+    border: none;
+}
+
+button img {
+    height: 35px;
+}

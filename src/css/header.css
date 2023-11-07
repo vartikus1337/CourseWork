@@ -19,7 +19,8 @@ header .search {
     align-items: center;
 }
 
-input {
+.title,
+header input {
     font-size: 20px;
     text-indent: 10px;
     background: rgba(79, 8, 97, 0.50);
@@ -28,19 +29,24 @@ input {
     flex-grow: 2;
     height: 35px;
 }
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
 
-button {
+header button {
     position: absolute;
     right: 20vw;
     border: none;
     background: none;
 }
 
-button:hover {
+header button:hover {
     cursor: pointer;
 }
 
-button img {
+header button img {
     width: 25px;
     height: 25px;
 }
