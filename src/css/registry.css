@@ -3,7 +3,7 @@
     src: url(../fonts/basic.ttf) format("truetype");
     font-style: normal;
     font-weight: 400;
-} 
+}
 
 body {
     font-family: "Basic";
@@ -149,7 +149,7 @@ main ul {
     font-size: 2vw;
 }
 
-main ul li{
+main ul li {
     list-style: inside;
     opacity: 0.7;
 }
@@ -184,4 +184,27 @@ main section:last-child {
     font-size: 1.5vw;
     display: flex;
     gap: 10px;
+}
+
+.title {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.title h1 {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.title a {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.title img {
+    width: 50px;
+    height: 25px;
 }

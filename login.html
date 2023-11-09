@@ -11,16 +11,16 @@
   
 <div id="particles-js"></div>
 
-<form action="" method="post">
+<form action="log.php" method="post">
   <div class="title">
     <h1>Login</h1>
-    <a href="#"><img src="src/imgs/Logo.svg" alt=""></a>
+    <a href="index.html"><img src="src/imgs/Logo.svg" alt=""></a>
   </div>
   <main>
-    <section class="input"><input placeholder="Nickname" type="text"></section>
-    <section class="input"><input placeholder="Password" type="text"></section>
+    <section class="input"><input name="nickname" placeholder="Nickname" type="text"></section>
+    <section class="input"><input name="password" placeholder="Password" type="text"></section>
     <div class="buttons">
-      <button type="submit">Registry</button>
+      <button onclick="location.href='registry.html'" type="button">Registry</button>
       <button type="submit">Come in</button>
     </div>
     <section>
