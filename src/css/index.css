@@ -24,8 +24,6 @@
 
 canvas {
     z-index: -1;
-    height: 300%;
-    width: 100vw;
     position: absolute;
 }
 
@@ -109,13 +107,13 @@ a.login:hover {
 
 .best {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
-    gap: 20px;
+    gap: 40px;
     margin-bottom: 20px;
 }
 
-.best > .img {
+.best .img {
     max-width: 475px;
     min-width: 100px;
     width: 100%;
@@ -123,7 +121,8 @@ a.login:hover {
     border-radius: 40px;
 } 
 
-.best > .content {
+
+.best .content {
     width: 300px;
     height: 250px;
     display: flex;
@@ -203,85 +202,137 @@ a.login:hover {
 .activity {
     display: flex;
     gap: 10px;
-}
-
-.activity > .users {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.users > h2 {
-    margin: 20px 0;
-}
-
-.users > .icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.icons img {
-    height: 64px;
-    width: 64px;
-    border-radius: 100px;
-}
-
-.activity {
     margin-bottom: 20px;
 }
 
-.activity > .chat {
-    width: 70%;
+.activity form {
+    width: 100%;
+    background: linear-gradient(270deg, rgba(149, 43, 255, 0.20) 0%, rgba(255, 108, 171, 0.20) 100%);
+    padding: 20px 10px 0px 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
 }
 
-.chat > h2 {
-    margin: 20px 0;
+form > .title {
+    display: flex;
+    justify-content: center;
 }
 
-.chat > .chat__msgs {
+form section {
     width: 100%;
-    height: 500px;
-}
-
-.chat > .chat__sand {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 50px;
 }
 
-.chat__sand > div.input {
-    display: flex;
-    align-items: center;
-    margin-left: 1em;
-    height: 100%;
-    width: 100%;
+section button {
+    background: none;
+    border: 0;
 }
 
-div.input > input {
+form > input {
+    max-width: 400px;
+    font-size: 20px;
     font-family: "Basic";
     color: #fff;
-    background: rgba(9, 9, 121, 1);
-    font-size: 2em;
+    background: #040345;
     text-indent: 10px;
     border: none;
     border-radius: 20px;
-    height: 70%;
+    height: 30px;
     width: 70%;
 }
 
-.chat__sand > a {
-    margin-right: 20px;
-    width: 30px;
-    height: 30px;
+textarea::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+textarea::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+textarea:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+textarea:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+textarea:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+textarea:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+textarea:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+textarea {
+    font-size: 20px;
+    max-width: 400px;
+    font-family: "Basic";
+    color: #fff;
+    background: #040345;
+    text-indent: 10px;
+    border: none;
+    border-radius: 20px;
 }
 
 footer {
