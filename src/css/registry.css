@@ -154,6 +154,12 @@ main ul li {
     opacity: 0.7;
 }
 
+main .footer {
+    font-size: 1.5vw;
+    display: flex;
+    gap: 10px;
+}
+
 button {
     font-family: "Basic";
     color: inherit;
@@ -173,6 +179,7 @@ button:hover {
         linear-gradient(135deg, darkred, darkorchid) border-box;
     border-radius: 40px;
     border: 2px solid transparent;
+    
 }
 
 button:hover,
@@ -180,11 +187,6 @@ input:hover {
     cursor: pointer;
 }
 
-main section:last-child {
-    font-size: 1.5vw;
-    display: flex;
-    gap: 10px;
-}
 
 .title {
     margin-top: 10px;

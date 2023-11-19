@@ -72,3 +72,7 @@ main {
     display: flex;
     gap: 10px;
 }
+
+a[href='blog.html'] {
+    text-align: center;
+}
