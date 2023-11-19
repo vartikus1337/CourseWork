@@ -97,3 +97,7 @@ button img {
     height: 35px;
 }
 
+@media screen and (max-width: 560px) {
+    canvas { display: none; }
+    body { background: linear-gradient(180deg, #040345 0%, #020111 100%); }
+}

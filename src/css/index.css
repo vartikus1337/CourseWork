@@ -131,6 +131,10 @@ a.login:hover {
     align-items: center;
 }
 
+a[href='blog.html'] {
+    text-align: center;
+}
+
 .content > h3,
 .content > p {
     text-align: center;
