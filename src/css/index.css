@@ -131,7 +131,7 @@ a.login:hover {
     align-items: center;
 }
 
-a[href='blog.html'] {
+a[href='blog.php'] {
     text-align: center;
 }
 
@@ -211,6 +211,7 @@ a[href='blog.html'] {
 
 .activity form {
     width: 100%;
+    border-radius: 50px;
     background: linear-gradient(270deg, rgba(149, 43, 255, 0.20) 0%, rgba(255, 108, 171, 0.20) 100%);
     padding: 20px 10px 0px 10px;
     display: flex;
@@ -224,7 +225,7 @@ form > .title {
 }
 
 form section {
-    width: 100%;
+    width: 98%;
     display: flex;
     justify-content: flex-end;
 }

@@ -106,3 +106,13 @@ button img {
     display: flex;
     gap: 30px;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+footer > h4 {
+    opacity: 0.4;
+}

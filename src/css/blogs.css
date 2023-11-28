@@ -11,6 +11,12 @@ html {
     background: linear-gradient(181deg, #520930 1.25%, #000 233.85%);
 }
 
+canvas {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
 body {
     font-family: 'Basic';
     color: #fff;
@@ -23,6 +29,8 @@ main {
     width: 80vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .best {
     display: flex;
@@ -73,6 +81,12 @@ main {
     gap: 10px;
 }
 
-a[href='blog.html'] {
+a[href='blog.php'] {
     text-align: center;
+}
+
+.linear-gradient-bg {
+    border-radius: 20px;
+    background: linear-gradient(270deg, rgba(149, 43, 255, 0.10) 0%, rgba(255, 108, 171, 0.10) 100%);
+    width: 70%;
 }

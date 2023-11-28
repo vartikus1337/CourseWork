@@ -138,6 +138,7 @@ main > footer {
     display: flex;
     height: 135px;
     align-items: center;
+    justify-content: space-around;
     gap: 30px;
 }
 
