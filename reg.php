@@ -39,7 +39,7 @@
 
     // Sql запрос
     
-    $sql = $sql = "INSERT INTO users ( nick, password, full_name, email) VALUES ( "."'".$nickname."',"."'".$password."',"."'".$full_name."',"."'".$email."'".' );';
+    $sql = $sql = "INSERT INTO users ( nick, password, full_name, email) VALUES ('$nickname', '$password','$full_name','$email');";
     if($conn->query($sql)){
         echo "Данные успешно добавлены";
     } else{
