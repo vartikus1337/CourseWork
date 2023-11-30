@@ -1,8 +1,16 @@
 <?php
-    function out($msg) {
+
+    function out($msg, $accept = false) {
         echo "<h1> $msg </h1>";
+        if ($accept) {
+            echo "<h1> Через 5сек вас выкинет на user.php</h1>";
+            header("refresh: 0, url=user.php");
+            die;
+            exit();
+        }
         echo "<h1> Через 5сек вас выкинет на login.html</h1>";
         header("refresh: 5, url=login.html");
+        die;
         exit();
     }
 
@@ -30,7 +38,13 @@
         foreach ($result as $row) {
             if ($row['nick'] == $nickname) {
                 if ($row['password'] ==  $password) {
-                    out("Вы типа вошли");
+                    //  Создание сессии с данными для входа в профиль 
+                    session_start();
+                    $_SESSION['nickname'] = $nickname;
+                    $_SESSION['password'] = $password;
+                    $_SESSION['full_name'] = $row['full_name'];
+                    $_SESSION['email'] = $row['email'];
+                    out('Вы типа вошли', true);
                 } else {
                     out("Неправильный пароль");
                 }
@@ -40,7 +54,5 @@
     } else {
         echo "Ошибка: " . mysqli_error($conn);
     }
-
-    // Переадресация
-    out("Всё ок!");
+    
 ?>

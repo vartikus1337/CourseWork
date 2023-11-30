@@ -13,16 +13,16 @@
     <header class="create">
         <a href="index.html"><img src="src/imgs/Logo.svg" alt=""></a>
         <div class="search">
-            <input placeholder="title blog" type="text">
-            <button><img src="src/imgs/accept.svg" alt=""></button>
+            <input name="title" form="create" placeholder="title blog" type="text">
+            <button type="submit" form="create"><img src="src/imgs/accept.svg" alt=""></button>
         </div>
-        <a class="profile" href="user.html">Profile</a>
+        <a class="profile" href="user.php">Profile</a>
     </header>
-    <form class="create" action="">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+    <form name="create" id="create" class="create" action="create.php" method="post" enctype="multipart/form-data">
+        <textarea name="text" id="" cols="30" rows="10"></textarea>
         <div class="preference">
-            <input type="file">
-            <input type="text" placeholder="small description">
+            <input type="file" name="img">
+            <input type="text" name="small_text" placeholder="small description">
         </div>
     </form>
 

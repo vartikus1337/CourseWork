@@ -107,6 +107,10 @@ button img {
     gap: 30px;
 }
 
+input#nick {
+    width: 30%;
+}
+
 footer {
     display: flex;
     justify-content: space-between;

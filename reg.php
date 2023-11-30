@@ -1,11 +1,11 @@
 <?php
+
     function out($msg) {
         echo "<h1> $msg </h1>";
         echo "<h1> Через 5сек вас выкинет на registry.html</h1>";
         header("refresh: 5, url=registry.html");
         exit();
     }
-
     // Проверка данных
 
     if( $_POST["nickname"] == NULL
@@ -45,9 +45,7 @@
     } else{
         echo "Ошибка: " . $conn->error;
     }
-
     $conn->close();
-
     // Переадресация
 
     out('Тебя зарегали!')
